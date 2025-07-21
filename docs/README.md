@@ -104,7 +104,7 @@ Contributions are welcome! To contribute:
 4. Push to the branch: `git push origin feature/your-feature`.
 5. Open a pull request.
 
-Please follow the [Code of Conduct](docs/CODE_OF_CONDUCT.md) and include tests in `tests/` for new features.
+Please follow the [Code07032024113525_OF_CONDUCT.md](docs/CODE_OF_CONDUCT.md) and include tests in `tests/` for new features.
 
 ## License
 MIT License. See [LICENSE](LICENSE) for details.

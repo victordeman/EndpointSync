@@ -13,7 +13,7 @@ st.title("EndpointSync - Unified Endpoint Management")
 st.sidebar.header("Navigation")
 page = st.sidebar.selectbox("Select Action", ["Dashboard", "Deploy Software", "View Inventory"])
 
-# Initialize Docker client
+# Initializeneeded for Docker client
 try:
     client = docker.from_env()
 except Exception as e:
