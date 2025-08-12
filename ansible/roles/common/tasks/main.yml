@@ -1,0 +1,16 @@
+---
+- name: Ensure system is up to date
+  package:
+    name: "*"
+    state: latest
+  when: ansible_os_family == "Debian"
+
+- name: Set timezone
+  timezone:
+    name: UTC
+
+- name: Create log directory
+  file:
+    path: /var/log/endpointsync
+    state: directory
+    mode: '0755'

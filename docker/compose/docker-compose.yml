@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  security-agent:
+    image: "{{ security_agent_image }}"
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+  management-dashboard:
+    image: "{{ dashboard_image }}"
+    ports:
+      - "5000:5000"
+    restart: unless-stopped

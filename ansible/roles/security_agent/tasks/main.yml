@@ -1,0 +1,13 @@
+---
+- name: Pull security agent image
+  containers.podman.podman_image:
+    name: "{{ security_agent_image }}"
+    state: present
+
+- name: Run security agent container
+  containers.podman.podman_container:
+    name: security-agent
+    image: "{{ security_agent_image }}"
+    state: started
+    ports:
+      - "8080:8080"

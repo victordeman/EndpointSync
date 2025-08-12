@@ -1,0 +1,7 @@
+---
+- name: Deploy software to endpoints
+  hosts: "{{ target | default('all') }}"
+  become: true
+  roles:
+    - docker_setup
+    - security_agent

@@ -1,0 +1,6 @@
+---
+- name: Configure endpoints
+  hosts: "{{ target | default('all') }}"
+  become: true
+  roles:
+    - common

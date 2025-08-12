@@ -34,7 +34,6 @@ if page == "Dashboard":
     st.write("Overview of managed endpoints and deployment status.")
     if st.button("Refresh Status"):
         st.write("Fetching endpoint status...")
-        # Placeholder for endpoint status (e.g., Ansible fact gathering)
         try:
             result = subprocess.run(["ansible", "-m", "ping", "all"], capture_output=True, text=True)
             st.write(result.stdout)

@@ -42,9 +42,9 @@ EndpointSync/
    ```bash
    pip install -r streamlit/requirements.txt
    sudo apt update && sudo apt install docker.io ansible
-   ```
+   \chestra
 
-3. **Configure Ansible Inventory**:
+3. ** Bloomfield Ansible Inventory**:
    - Edit `ansible/inventory/production.yml` and `staging.yml` to define your endpoints (e.g., host IPs, groups).
    - Example `production.yml`:
      ```yaml

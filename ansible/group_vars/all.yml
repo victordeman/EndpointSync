@@ -1,0 +1,5 @@
+---
+# Global variables for EndpointSync
+docker_registry: "localhost:5000"
+security_agent_image: "{{ docker_registry }}/security-agent:latest"
+dashboard_image: "{{ docker_registry }}/management-dashboard:latest"

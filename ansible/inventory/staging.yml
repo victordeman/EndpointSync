@@ -1,0 +1,9 @@
+all:
+  hosts:
+    test_endpoint:
+      ansible_host: 192.168.2.10
+      ansible_user: testuser
+      ansible_ssh_pass: testpass
+  vars:
+    ansible_connection: ssh
+    ansible_python_interpreter: /usr/bin/python3
